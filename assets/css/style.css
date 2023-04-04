@@ -6,14 +6,26 @@ body {
     color: #333;
 }
 
-footer {
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html,
+  body {
+    height: 100%;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
     text-align: center;
-    padding: 2px;
-    padding-top: 2px;
-    background-color: #080808;
-    color: #ffffff;
-    margin-top: 25%;
-}
+  }
+  .content {
+    flex: 1 0 auto;
+  }
+  .footer {
+    flex: 0 0 auto;
+  }
 
 *:before,
 *:after {
@@ -129,8 +141,8 @@ h1, h2, h3, h4, h5, h6 {
 .intro__inner {
     width: 100%;
     max-width: 880px;
-    margin: 0 auto;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .intro__suptitle {
